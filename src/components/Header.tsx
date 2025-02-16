@@ -14,8 +14,8 @@ function Header() {
   const { user } = useUser();
   const createClerkPasskey = async () => {
     try {
-      const response = await user?.createPasskey();
-      console.log(response, "response");
+      // const response = await user?.createPasskey();
+      // console.log(response, "response");
     } catch (err) {
       console.error("error", JSON.stringify(err, null, 2));
     }
