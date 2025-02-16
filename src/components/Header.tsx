@@ -12,7 +12,6 @@ import Form from "next/form";
 import { PackageIcon, TrolleyIcon } from "@sanity/icons";
 function Header() {
   const { user } = useUser();
-  console.log(user, "usekoinfo");
   const createClerkPasskey = async () => {
     try {
       const response = await user?.createPasskey();
