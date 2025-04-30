@@ -4,7 +4,7 @@ import Image from "next/image";
 import { imageUrl } from "@src/lib/imageUrl";
 
 const ProductThumb = ({ product }: { product: Product }) => {
-  const isOutOfStock = product.stock !== null && product?.stock <= 0;
+  const isOutOfStock = (product.stock ?? 0) <= 0;
   return (
     <Link
       href={`/product/${product.slug?.current}`}
